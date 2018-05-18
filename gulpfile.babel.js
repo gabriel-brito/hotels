@@ -11,10 +11,16 @@ wrench.readdirSyncRecursive('./gulp').filter(file => {
   require('./gulp/' + file)
 });
 
+gulp.task('build', ()=> {
+  runSequence(
+    'stylus',
+    'scripts'
+  )
+});
+
 gulp.task('default', () => {
   runSequence(
-
-    'stylus',
+    'build',
     'browser-sync',
     'watch'
   )

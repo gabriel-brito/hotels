@@ -1,7 +1,7 @@
+import Teste from '../_modules/teste/teste';
+
 'use strict';
 
-import teste from '../_modules/teste/teste';
-
-window.on('load', function(){
+(function(){
   let teste = new Teste();
-});
+})();
