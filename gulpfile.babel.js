@@ -13,6 +13,7 @@ wrench.readdirSyncRecursive('./gulp').filter(file => {
 
 gulp.task('build', ()=> {
   runSequence(
+    'imagemin',
     'stylus',
     'scripts'
   )
