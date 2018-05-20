@@ -11,9 +11,15 @@ gulp.task('stylus', ()=> {
     use: [jeet(), 
           rupture(),
           autoprefixer({
-            browsers: ['last 2 version', '> 5%', 'safari 5', 'ios 6', 'android 4']
+            browsers: [
+              'last 2 version',
+              '> 5%',
+              'safari 5',
+              'ios 6',
+              'android 4'
+            ]
           })
-          ],
+        ],
     'include css': true  
   }
 

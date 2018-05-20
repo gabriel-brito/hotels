@@ -13,24 +13,41 @@
 <body>
 
   <header class="header">
-    <a class="menu-trigger" href="#">
+    <ul class="header__list">
+      <li class="header__item">
+        <a href="#">The Queen city</a>  
+      </li>
+      <li class="header__item">
+        <a href="#">My Reservations</a>  
+      </li>
+      <li class="header__item">
+        <a href="#">Guide</a>  
+      </li>        
+    </ul>
+
+    <a class="menu-trigger" id="menu-trigger" href="#">
       <span></span>
       <span></span>
       <span></span>
     </a>
-    <nav class="mobileMenu">
+
+    <nav class="mobileMenu" id="mobileMenu">      
       <ul class="mobileMenu__list">
-        <li>
+        <li class="mobileMenu__item">
           <a href="#">The Queen city</a>  
         </li>
-        <li>
+        <li class="mobileMenu__item">
           <a href="#">My Reservations</a>  
         </li>
-        <li>
+        <li class="mobileMenu__item">
           <a href="#">Guide</a>  
         </li>        
       </ul>
+      <a href="#" class="mobileMenu__closeButton">
+        <span>Close</span>
+      </a>
     </nav>
+
 
 
   </header>

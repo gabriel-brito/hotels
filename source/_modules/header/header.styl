@@ -1,7 +1,41 @@
 .header {
   width: 100%;
-  min-height: 250px;
+  min-height: 325px;
   background-image: url('/public/images/hero.jpg');
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  
+  +above(tablet) {
+    background-position: top center;
+    min-height: 450px;
+  }
+  
+  +above(small-desk){
+    min-height: 580px;
+  }
+  
+  .header__list {
+    display: none;
+
+    +above(tablet) {
+      display: block;
+      width: 100%;
+      padding: 30px 70px;
+    }
+    
+    .header__item {
+      float: left;
+      margin-right: 30px;
+      
+      a {
+        font-size: 13px;
+        text-decoration: none;
+        font-family: Heebo;
+        font-weight: 100;
+        color: $white;
+      }
+    }
+  }
+  
 }
