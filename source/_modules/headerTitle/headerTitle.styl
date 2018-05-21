@@ -1,0 +1,45 @@
+.headerTitle {
+  padding: 0 40px;
+  margin: 0 auto;
+  position: relative;
+  max-width: 470px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  
+  .headerTitle__logo {
+    display: block;
+    margin: 0 auto 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 45px;
+  }
+  
+  > h1 {
+    color: $white;
+    font-family: Heebo;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    
+    +above(tablet){
+      letter-spacing: 10px;
+    }
+
+
+    span {
+      display: block;
+      padding: 10px 0;
+      margin: 10px 0;
+      font-size: 40px;
+      border-top: 1px solid $white;
+      border-bottom: 1px solid $white;
+      letter-spacing: 5px;
+    }
+  }
+  
+  +above(tablet){
+    top: 30%;
+    transform: translateY(-70%);
+  }
+}
